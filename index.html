@@ -4,23 +4,36 @@
     <meta charset="utf-8">
     <title>Guessing Game</title>
   </head>
-  <body>
 
+  <body>
     <h1>Sup World</h1>
 
     <script>
       var userName = prompt('Who are you? Who, who? Who, who?')
-      alert('Hellooooooo' + userName)
+      alert('Hellooooooo ' + userName + '. I have a question! Guess the answer!')
 
-      var question0ne = prompt('')
+      var questionOne = prompt('Did I get any sleep last night?')
       questionOne = questionOne.toLowerCase();
 
       if (questionOne === 'yes' || questionOne === 'y' || questionOne === 'yeah'|| questionOne === 'yup'|| questionOne === 'yep' ) {
 
+        alert('I wish I was this magical person you think I am who got sleep last night!')
       }
 
       else if (questionOne === 'no' || questionOne === 'n'|| questionOne === 'nope') {
 
+        alert('Much wow! If you are reading this on <a day>, you are probably correct!')
+
+        var questionTwo = prompt('Would you like to know why?')
+        questionTwo = questionTwo.toLowerCase();
+
+        if (questionTwo === 'yes' || questionTwo === 'y' || questionTwo === 'yeah'|| questionTwo === 'yup'|| questionTwo === 'yep' ) {
+          alert('That is because I have a cat! She is a Grade-A asswipe! She likes to eat plastic and scratch at doors, but only at 3am! Yay for cats! Her name is Puppy. That is my fun fact!')
+        }
+
+        else if (questionTwo === 'no' || questionTwo === 'n'|| questionTwo === 'nope') {
+          alert('That is fair! I respect your honesty! Jerk')
+        }
       }
 
       else {
