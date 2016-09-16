@@ -1,6 +1,17 @@
 
+body {
+  background-color: black;
+  font: arial;
+}
 
-question {
+
+.question {
   color: grey;
   text-align: center;
+}
+
+.answer {
+  color: #FFFFFF;
+  text-align: center;
+
 }
