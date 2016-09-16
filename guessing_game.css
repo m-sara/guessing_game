@@ -1,7 +1,7 @@
 
 body {
   background-color: black;
-  font: arial;
+
 }
 
 
@@ -13,5 +13,8 @@ body {
 .answer {
   color: #FFFFFF;
   text-align: center;
+}
 
+.list {
+  color: #0F0F0F;
 }

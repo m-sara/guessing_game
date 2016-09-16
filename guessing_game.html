@@ -17,9 +17,8 @@
     <p class="answer">More, but I've only made about six or seven <strong>major</strong> moves. I've lived in every "corner" of the country.<br><br></p>
     <p class="question">Based on what you just learned, do I like moving?</p>
     <p class="answer">I do not. I still very much do not.<br><br></p>
-    <p class="question">Which of these is not a place I have lived?<br>California<br>Louisiana<br>Florida<br>India<br>Connecticut<br><br></p>
-    <p class="answer"></p>
-
+    <p class="question">Which of these is NOT a place I have lived?<br>California<br>Louisiana<br>Florida<br>India<br>Connecticut</p>
+    <p class="answer">Louisiana, though I definitely want to one day.</p>
 
 
 
@@ -31,22 +30,23 @@
       if (questionOne === 'yes' || questionOne === 'y' || questionOne === 'yeah'|| questionOne === 'yup'|| questionOne === 'yep' ) {
         alert('Yes. But unfortunately that particular dumb ass box continues to be dumb and an ass, so here we are.');
       }
-      else if (questionOne === 'no' || questionOne === 'n'|| questionOne === 'nope') {
-        alert('u silly');
+      else if (questionOne === 'no' || questionOne === 'n'|| questionOne === 'nope' || questionTwo === 'na' || questionTwo === 'nah') {
+        alert('i die');
       }
       else {
         alert('I am dissapoint');
       }
 
+
       var questionTwo = prompt('Do I have any pets?').toLowerCase();
       if (questionTwo === 'yes' || questionTwo === 'y' || questionTwo === 'yeah'|| questionTwo === 'yup'|| questionTwo === 'yep' ) {
         alert('Yup. One little old kitty bitch named Puppy. She is the bane of my existence and the love of my life. But mostly the first one.');
       }
-      else if (questionTwo === 'no' || questionTwo === 'n'|| questionTwo === 'nope') {
+      else if (questionTwo === 'no' || questionTwo === 'n'|| questionTwo === 'nope' || questionTwo === 'na' || questionTwo === 'nah') {
         alert('Na, I got one cat. She\'s not fat, she\'s big-boned. We\'re like an old married couple. And one of us shits in a box.');
       }
       else {
-        alert('dude')
+        alert('u silly')
       }
 
       var questionThree = prompt('Have I moved more or less than ten times?').toLowerCase();
@@ -60,6 +60,40 @@
         alert('wat r u even saying')
       }
 
+      var questionFour = prompt('Based on what you just learned (or didn\'t learn), do I like moving?').toLowerCase();
+      if (questionFour === 'yes' || questionFour === 'y' || questionFour === 'yeah'|| questionFour === 'yup'|| questionFour === 'yep' ) {
+        alert('I... do not.');
+      }
+      else if (questionFour === 'no' || questionFour === 'n'|| questionFour === 'nope' || questionFour === 'na' || questionFour === 'nah') {
+        alert('That is correct. You win. Here is your prize. Just kidding. There is no prize. \n\n...Unless you want a cat?');
+      }
+      else {
+        alert('like r u even trying')
+      }
+
+
+      var questionFive = prompt('Which of these places have I NOT lived?\n\nCalifornia\nLouisiana\nFlorida\nIndia\nConnecticut').toLowerCase();
+      if (questionFive === 'california' || questionFive === 'ca' || questionFive === 'cali'|| questionFive === 'florida'|| questionFive === 'fl' || questionFive === 'india' || questionFive === 'connecticut'  || questionFive === 'ct' ) {
+        alert('Nope! I have indeed lived there.');
+      }
+      else if (questionFive === 'louisiana' || questionFive === 'la') {
+        alert('That\'s right! Though I\'ve always wanted to. Maybe in a couple of years...');
+      }
+      else {
+        alert('can u not spell or')
+      }
+
+
+      var questionSix = prompt('').toLowerCase();
+      if (questionSix === '' || questionSix === '' || questionSix === ''|| questionSix === 'yup'|| questionSix === 'yep' ) {
+        alert('');
+      }
+      else if (questionSix === '' || questionSix === '') {
+        alert('');
+      }
+      else {
+        alert('ur hurting us both')
+      }
 
 
     </script>
