@@ -26,18 +26,22 @@
     <h3><p class="question">Which of these is NOT a place I have lived?<br></p></h3>
     <h3><p class="list">California<br>Louisiana<br>Florida<br>India<br>Connecticut</class></p></h3>
     <h3><p class="answer">Louisiana, though I definitely want to one day.<br><br><br></p></h3>
-    <h3><p class="question"></p></h3>
-    <h3><p class="answer"><br><br></p></h3>
+    <h3><p class="question">What kind of music do I listen to?</p></h3>
+    <h3><p class="answer">A lot of different kinds! Alternative rock, classic rock, hip-hop/rap, jazz, and lots of other things.<br><br></p></h3>
 
 
-    <!--
     <script>
+
       var userName = prompt('Who are you?');
       alert('Sup ' + userName + '. Let\'s see how much you can guess about me.');
 
+      var score = 0;
+
       var questionOne = prompt('Would I rather be using Windows?').toLowerCase();
+      console.log("question one");
       if (questionOne === 'yes' || questionOne === 'y' || questionOne === 'yeah'|| questionOne === 'yup'|| questionOne === 'yep' ) {
         alert('Yes. But unfortunately that particular dumb ass box continues to be dumb and an ass, so here we are.');
+        console.log(++score);
       }
       else if (questionOne === 'no' || questionOne === 'n'|| questionOne === 'nope' || questionTwo === 'na' || questionTwo === 'nah') {
         alert('i die');
@@ -48,65 +52,66 @@
 
 
       var questionTwo = prompt('Do I have any pets?').toLowerCase();
+      console.log("question two");
       if (questionTwo === 'yes' || questionTwo === 'y' || questionTwo === 'yeah'|| questionTwo === 'yup'|| questionTwo === 'yep' ) {
         alert('Yup. One little old kitty bitch named Puppy. She is the bane of my existence and the love of my life. But mostly the first one.');
+        console.log(++score);
       }
       else if (questionTwo === 'no' || questionTwo === 'n'|| questionTwo === 'nope' || questionTwo === 'na' || questionTwo === 'nah') {
         alert('Na, I got one cat. She\'s not fat, she\'s big-boned. We\'re like an old married couple. And one of us shits in a box.');
       }
       else {
-        alert('u silly')
+        alert('u silly');
       }
 
       var questionThree = prompt('Have I moved more or less than ten times?').toLowerCase();
+      console.log("question three");
       if (questionThree === 'less' || questionThree === 'l' || questionThree === '<') {
         alert('Nope. I\'ve moved a LOT.');
       }
       else if (questionThree === 'more' || questionThree === 'm'|| questionThree === 'mo' || questionThree === 'moar' || questionThree === '>') {
         alert('u rite, and yet I still own way too much shit');
+        console.log(++score);
       }
       else {
-        alert('wat r u even saying')
+        alert('wat r u even saying');
       }
 
       var questionFour = prompt('Based on what you just learned (or didn\'t learn), do I like moving?').toLowerCase();
+      console.log("question four");
       if (questionFour === 'yes' || questionFour === 'y' || questionFour === 'yeah'|| questionFour === 'yup'|| questionFour === 'yep' ) {
         alert('I... do not.');
       }
       else if (questionFour === 'no' || questionFour === 'n'|| questionFour === 'nope' || questionFour === 'na' || questionFour === 'nah') {
         alert('That is correct. You win. Here is your prize. Just kidding. There is no prize. \n\n...Unless you want a cat?');
+        console.log(++score);
       }
       else {
-        alert('like r u even trying')
+        alert('like r u even trying');
       }
 
 
       var questionFive = prompt('Which of these places have I NOT lived?\n\nCalifornia\nLouisiana\nFlorida\nIndia\nConnecticut').toLowerCase();
+      console.log("question five");
       if (questionFive === 'california' || questionFive === 'ca' || questionFive === 'cali'|| questionFive === 'florida'|| questionFive === 'fl' || questionFive === 'india' || questionFive === 'connecticut'  || questionFive === 'ct' ) {
         alert('Nope! I have indeed lived there.');
       }
       else if (questionFive === 'louisiana' || questionFive === 'la') {
         alert('That\'s right! Though I\'ve always wanted to. Maybe in a couple of years...');
+        console.log(++score);
       }
       else {
-        alert('can u not spell or')
+        alert('can u not spell or');
       }
 
 
-      var questionSix = prompt('').toLowerCase();
-      if (questionSix === '' || questionSix === '' || questionSix === ''|| questionSix === 'yup'|| questionSix === 'yep' ) {
-        alert('');
-      }
-      else if (questionSix === '' || questionSix === '') {
-        alert('');
-      }
-      else {
-        alert('ur hurting us both')
-      }
+      var questionSix = prompt('What kind of music do I regularly listen to?').toLowerCase();
+
+
+      alert('Your score is ' + score + ' out of 6. Hooray!');
 
 
     </script>
-    -->
 
   </body>
 </html>
