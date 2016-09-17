@@ -64,6 +64,7 @@ hr {
   height: 322px;
   weight: 271px;
   float: left;
+  padding-top: 50px;
   padding-left: 150px;
 }
 
@@ -84,10 +85,18 @@ hr {
   letter-spacing: 4px;
 }
 
+.question4 {
+  padding-left: 150px;
+}
+
 .question5 {
-  padding-right: 215px;
+  padding-right: 125px;
 }
 
 .question6 {
-  padding-right: 450px;
+  padding-right: 325px;
+}
+
+.question7 {
+  padding-right: 625px;
 }
