@@ -3,45 +3,77 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="guessing_game.css">
-    <title>Guessing Game</title>
+    <title>Maithrika Sara</title>
   </head>
 
   <body>
-    <h1 class="header">My·Three·Kuh<br></h1>
+    <h1 class="header">My·Three·Kuh</h1>
+    <hr style="height: 5px"><hr style="height: 3px">
+    <!-- <h3 class="resumetitle"><u>RÉSUMÉ</u><br>  </h3> -->
+    <h3 class="resume">Work: Zulily<br><br>
+      Code Fellows program<br>
+      <i>(in progress)</i><br><br>
+      ATA in Computer Information Systems: Information Security and Digital Forensics<br>
+      <i>(in progress)</i><br><br>
+      Associate in Arts and Sciences; Certificate – Accounting Assistant<br><br></h3>
     <hr>
-    <h3 class="resumetitle"><u>RÉSUMÉ</u><br>  </h3>
-    <h3 class="resume">Work: Zulily<br><br>ATA in Computer Information Systems: Information Security and Digital Forensics<br><i>(in progress)</i><br><br>Associate in Arts and Sciences; Certificate – Accounting Assistant<br><br></h3>
+    <h3 class="topten">Eleven Artists I Love</h3>
+    <h6 class="toptensub">though it may seem otherwise, these are in no particular order... after the first three</h6>
+    <ol>
+      <li class="artist">Billy Joel<br></li>
+      <li class="artist">Creedence Clearwater Revival<br></li>
+      <li class="artist">Black Keys<br></li>
+      <li class="artist">Muse</li>
+      <li class="artist">Styx<br></li>
+      <li class="artist">Foreigner<br></li>
+      <li class="artist">Boston<br></li>
+      <li class="artist">Chubby Checker<br></li>
+      <li class="artist">Salvador Dalí<br></li>
+      <li class="artist">The Heavy<br></li>
+      <li class="artist">The Pink Spiders<br></li>
+    </ol>
 
     <hr>
-    <h2 class="smtitle">Stuff About Me<br></h2>
+    <!-- <h2 class="smtitle">Stuff About Me<br></h2> -->
     <img class="cat" src="cat3.png">
-    <h3><p class="question"><br><br>Would I rather be using Windows?</p></h3>
-    <h3><p class="answer">Yes. Yes I would.<br><br><br></p></h3>
-    <h3><p class="question">Do I have any pets?</p></h3>
-    <h3><p class="answer">Yup. One cat named Puppy.<br><br><br></p></h3>
-    <h3><p class="question">Have I moved more or less than ten times?</p></h3>
-    <h3><p class="answer">More, but I've only made about six or seven <strong>major</strong> moves. I've lived in every "corner" of the country.<br><br><br></p></h3>
-    <h3><p class="question">Based on what you just learned, do I like moving?</p></h3>
-    <h3><p class="answer">I do not. I still very much do not.<br><br><br></p></h3>
-    <h3><p class="question">Which of these is NOT a place I have lived?<br></p></h3>
-    <h3><p class="list">California<br>Louisiana<br>Florida<br>India<br>Connecticut</class></p></h3>
-    <h3><p class="answer">Louisiana, though I definitely want to one day.<br><br><br></p></h3>
-    <h3><p class="question">What kind of music do I listen to?</p></h3>
-    <h3><p class="answer">A lot of different kinds! Alternative rock, classic rock, hip-hop/rap, jazz, and lots of other things.<br><br></p></h3>
-
+    <h3 class="question"><br><br>Would I rather be using Windows?</h3>
+    <h3 class="answer">Yes. Yes I would.<br><br><br></h3>
+    <h3 class="question">Do I have any pets?</h3>
+    <h3 class="answer">Yup. One cat named Puppy.<br><br><br></h3>
+    <h3 class="question">Do I hate the cold?</h3>
+    <h3 class="answer">So much. Unless I'm indoors, oddly.<br><br><br></h3>
+    <div class="question4">
+      <h3 class="question">What season was I born in?</h3>
+      <h3 class="answer">Summer! Yay for not having to go to school on your birthday!<br><br><br></h3>
+    </div>
+    <div class="question5">
+      <h3 class="question">Which of these is NOT a place I have lived?<br></h3>
+      <h3 class="list">California<br>Louisiana<br>Florida<br>India<br>Connecticut</class></h3>
+      <h3 class="answer">Louisiana, though I definitely want to one day.<br><br><br></h3>
+    </div>
+    <div class="question6">
+      <h3 class="question">What kind of music do I listen to?</h3>
+      <h3 class="answer">A lot of different kinds! Alternative rock, classic rock, hip-hop/rap, jazz, and lots of other things.<br><br><br></h3>
+    </div>
+    <div class="question7">
+      <h3 class="question">How many times have I moved?</h3>
+      <h3 class="answer">At least 12, but I've only made about six or seven <strong>major</strong> moves.
+        I've lived in every "corner" of the country.<br><br></h3>
+    </div>
 
     <script>
 
       var userName = prompt('Who are you?');
+      console.log("User: " + userName);
       alert('Sup ' + userName + '. Let\'s see how much you can guess about me.');
-
       var score = 0;
 
-      var questionOne = prompt('Would I rather be using Windows?').toLowerCase();
+//question 1
       console.log("question one");
+      var questionOne = prompt('Would I rather be using Windows?').toLowerCase();
       if (questionOne === 'yes' || questionOne === 'y' || questionOne === 'yeah'|| questionOne === 'yup'|| questionOne === 'yep' ) {
         alert('Yes. But unfortunately that particular dumb ass box continues to be dumb and an ass, so here we are.');
-        console.log(++score);
+        console.log('Correct answers: ' + ++score);
       }
       else if (questionOne === 'no' || questionOne === 'n'|| questionOne === 'nope' || questionTwo === 'na' || questionTwo === 'nah') {
         alert('i die');
@@ -50,12 +82,12 @@
         alert('I am dissapoint');
       }
 
-
-      var questionTwo = prompt('Do I have any pets?').toLowerCase();
+//question 2
       console.log("question two");
+      var questionTwo = prompt('Do I have any pets?').toLowerCase();
       if (questionTwo === 'yes' || questionTwo === 'y' || questionTwo === 'yeah'|| questionTwo === 'yup'|| questionTwo === 'yep' ) {
         alert('Yup. One little old kitty bitch named Puppy. She is the bane of my existence and the love of my life. But mostly the first one.');
-        console.log(++score);
+        console.log('Correct answers: ' + ++score);
       }
       else if (questionTwo === 'no' || questionTwo === 'n'|| questionTwo === 'nope' || questionTwo === 'na' || questionTwo === 'nah') {
         alert('Na, I got one cat. She\'s not fat, she\'s big-boned. We\'re like an old married couple. And one of us shits in a box.');
@@ -64,64 +96,97 @@
         alert('u silly');
       }
 
-      var questionThree = prompt('Have I moved more or less than ten times?').toLowerCase();
+//question 3
       console.log("question three");
-      if (questionThree === 'less' || questionThree === 'l' || questionThree === '<') {
-        alert('Nope. I\'ve moved a LOT.');
+      var questionThree = prompt('Do I hate the cold?').toLowerCase();
+      if (questionThree === 'yes' || questionThree === 'y' || questionThree === 'yeah'|| questionThree === 'yup'|| questionThree === 'yep' ) {
+        alert('That is correct. You win this question. Here is your prize. Just kidding. There is no prize. \n\n...Unless you want a cat?');
+        console.log('Correct answers: ' + ++score);
       }
-      else if (questionThree === 'more' || questionThree === 'm'|| questionThree === 'mo' || questionThree === 'moar' || questionThree === '>') {
-        alert('u rite, and yet I still own way too much shit');
-        console.log(++score);
-      }
-      else {
-        alert('wat r u even saying');
-      }
-
-      var questionFour = prompt('Based on what you just learned (or didn\'t learn), do I like moving?').toLowerCase();
-      console.log("question four");
-      if (questionFour === 'yes' || questionFour === 'y' || questionFour === 'yeah'|| questionFour === 'yup'|| questionFour === 'yep' ) {
-        alert('I... do not.');
-      }
-      else if (questionFour === 'no' || questionFour === 'n'|| questionFour === 'nope' || questionFour === 'na' || questionFour === 'nah') {
-        alert('That is correct. You win. Here is your prize. Just kidding. There is no prize. \n\n...Unless you want a cat?');
-        console.log(++score);
+      else if (questionThree === 'no' || questionThree === 'n'|| questionThree === 'nope' || questionThree === 'na' || questionThree === 'nah') {
+        alert('Unless the temperature is above 75°F, ya girl not interested in going outside.');
       }
       else {
         alert('like r u even trying');
       }
 
+//question 4
+      console.log("question four");
+      var questionFour = prompt('What season was I born in?').toLowerCase();
+      if (questionFour === 'summer' || questionFour === 'sumer' || questionFour === 'baseball') {
+        alert('That\'s the one! That might explain why I hate the cold.');
+        console.log('Correct answers: ' + ++score);
+      }
+      else if (questionFour === 'fall' || questionFour === 'winter'|| questionFour === 'spring' || questionFour === 'football' || questionFour === 'hockey' || questionFour === 'basketball' || questionFour === 'holiday') {
+        alert('Nope! Correct answer is summer (or baseball).');
+        console.log('Correct answers: ' + ++score);
+      }
+      else {
+        alert('wat r u even saying');
+      }
 
-      var questionFive = prompt('Which of these places have I NOT lived?\n\nCalifornia\nLouisiana\nFlorida\nIndia\nConnecticut').toLowerCase();
+//question 5
       console.log("question five");
+      var questionFive = prompt('Which of these places have I NOT lived?\n\nCalifornia\nLouisiana\nFlorida\nIndia\nConnecticut').toLowerCase();
       if (questionFive === 'california' || questionFive === 'ca' || questionFive === 'cali'|| questionFive === 'florida'|| questionFive === 'fl' || questionFive === 'india' || questionFive === 'connecticut'  || questionFive === 'ct' ) {
         alert('Nope! I have indeed lived there.');
       }
       else if (questionFive === 'louisiana' || questionFive === 'la') {
         alert('That\'s right! Though I\'ve always wanted to. Maybe in a couple of years...');
-        console.log(++score);
+        console.log('Correct answers: ' + ++score);
       }
       else {
         alert('can u not spell or');
       }
 
-
-      var questionSix = prompt('What kind of music do I regularly listen to?').toLowerCase();
-
-      var sixArray = ['alternative', 'classic rock', 'hip-hop', 'rap', 'jazz', 'rock'];
+//question 6
       console.log("question six");
-
+      var questionSix = prompt('What is a kind of music that I regularly listen to?').toLowerCase();
+      var sixArray = ['alternative', 'classic rock', 'hip-hop', 'rap', 'jazz', 'rock', 'pop', 'pop punk', 'top 40', 'contemporary'];
       if (sixArray.indexOf(questionSix) > -1) {
-        alert('Definitely!');
-        console.log(++score);
+        alert('That\'s one!');
+        console.log('Correct answers: ' + ++score);
       }
       else if (sixArray.indexOf(questionSix) < 0) {
-        alert('That wasn\'t one of the answers I entered, but I would probably still listen to it!');
+        alert('I enjoy most types of music! But the ones I listen to most regularly are [classic or other] rock, hip-hop, jazz, and contemporary.');
       }
 
-      alert('Your score is ' + score + ' out of 6. Hooray!');
+//question 7
+      console.log("question seven");
+      var tries = 0;
+      while (tries < 10) {
+        var questionSeven = parseInt(prompt('How many times have I moved? You get ten tries!', 0));
+        if (questionSeven === 12) {
+          console.log('Tries: ' + ++tries);
+          if (tries === 1) {
+            alert('Yup! That\'s it! Or at least, that\'s how many I can remember.\n\nIt took you 1 try!');
+          }
+          else {
+            alert('Yup! That\'s it! Or at least, that\'s how many I can remember.\n\nIt took you ' + tries + ' tries!');
+          }
+          console.log('Correct answers: ' + ++score);
+          break;
+        }
+        else if (questionSeven > 12) {
+          alert('Too high!');
+          console.log('Tries: ' + ++tries);
+        }
+        else if (questionSeven < 12) {
+          alert('Too low!');
+          console.log('Tries: ' + ++tries);
+        }
+        else {
+          alert('Is that a number?');
+          console.log('Tries: ' + ++tries);
+        }
+      }
+      if (tries > 9) {
+        alert('Sorry! You ran out of tries. The answer is 12!');
+      }
 
+// FINAL SCORE
+      alert('Your score is ' + score + ' out of 7, ' + userName + '. Hooray for you!');
 
     </script>
-
   </body>
 </html>
