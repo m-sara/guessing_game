@@ -1,20 +1,58 @@
 
 body {
   background-color: black;
-
+  color: white;
 }
 
+.header {
+  color: #373137;
+  font-size: 500%;
+  font-weight: bold;
+  letter-spacing: 6px;
+}
+
+.resumetitle {
+  color: #ada2ad;
+  font-size: 220%;
+  text-align: center;
+  letter-spacing: 4px;
+  font-variant: small-caps;
+}
+
+.resume {
+  color: #968896;
+  text-align: center;
+  font-size: 170%;
+  letter-spacing: 3px;
+  font-variant: small-caps;
+}
+
+.smtitle {
+  font-size: 230%;
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+.cat {
+  height: 322px;
+  weight: 271px;
+  float: left;
+}
 
 .question {
-  color: grey;
+  color: #d0cad0;
   text-align: center;
+  letter-spacing: 3px;
 }
 
 .answer {
-  color: #FFFFFF;
+  color: #615661;
   text-align: center;
 }
 
 .list {
-  color: #0F0F0F;
+  color: #8b7b8b;
+  text-align: center;
+  letter-spacing: 4px;
+
 }
