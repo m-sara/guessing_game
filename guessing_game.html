@@ -107,6 +107,16 @@
 
       var questionSix = prompt('What kind of music do I regularly listen to?').toLowerCase();
 
+      var sixArray = ['alternative', 'classic rock', 'hip-hop', 'rap', 'jazz', 'rock'];
+      console.log("question six");
+
+      if (sixArray.indexOf(questionSix) > -1) {
+        alert('Definitely!');
+        console.log(++score);
+      }
+      else if (sixArray.indexOf(questionSix) < 0) {
+        alert('That wasn\'t one of the answers I entered, but I would probably still listen to it!');
+      }
 
       alert('Your score is ' + score + ' out of 6. Hooray!');
 
