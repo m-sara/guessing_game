@@ -6,14 +6,21 @@ body {
 
 .header {
   color: #373137;
-  font-size: 500%;
+  font-size: 450%;
   font-weight: bold;
   letter-spacing: 6px;
 }
 
+hr {
+  height: 1px;
+  color: #6f626f;
+  background-color: #6f626f;
+  border: none;
+}
+
 .resumetitle {
   color: #ada2ad;
-  font-size: 220%;
+  font-size: 150%;
   text-align: center;
   letter-spacing: 4px;
   font-variant: small-caps;
@@ -22,13 +29,33 @@ body {
 .resume {
   color: #968896;
   text-align: center;
-  font-size: 170%;
+  font-size: 150%;
   letter-spacing: 3px;
   font-variant: small-caps;
 }
 
+.topten {
+  color: #dcd7dc;
+  text-align: left;
+  font-size: 175%;
+  letter-spacing: 5px;
+}
+
+.toptensub {
+  color: #dcd7dc;
+  font-size: 92%;
+  font-weight: lighter;
+  font-style: oblique;
+}
+
+.artist {
+  color: #ada2ad;
+  padding-left: 25px;
+  letter-spacing: 3px;
+}
+
 .smtitle {
-  font-size: 230%;
+  font-size: 150%;
   text-align: center;
   letter-spacing: 4px;
 }
@@ -37,6 +64,7 @@ body {
   height: 322px;
   weight: 271px;
   float: left;
+  padding-left: 150px;
 }
 
 .question {
@@ -54,5 +82,12 @@ body {
   color: #8b7b8b;
   text-align: center;
   letter-spacing: 4px;
+}
 
+.question5 {
+  padding-right: 215px;
+}
+
+.question6 {
+  padding-right: 450px;
 }
