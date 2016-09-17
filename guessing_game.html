@@ -61,11 +61,10 @@
 
       var userName = prompt('Who are you?');
       alert('Sup ' + userName + '. Let\'s see how much you can guess about me.');
-
       var score = 0;
 
-      var questionOne = prompt('Would I rather be using Windows?').toLowerCase();
       console.log("question one");
+      var questionOne = prompt('Would I rather be using Windows?').toLowerCase();
       if (questionOne === 'yes' || questionOne === 'y' || questionOne === 'yeah'|| questionOne === 'yup'|| questionOne === 'yep' ) {
         alert('Yes. But unfortunately that particular dumb ass box continues to be dumb and an ass, so here we are.');
         console.log(++score);
@@ -77,9 +76,8 @@
         alert('I am dissapoint');
       }
 
-
-      var questionTwo = prompt('Do I have any pets?').toLowerCase();
       console.log("question two");
+      var questionTwo = prompt('Do I have any pets?').toLowerCase();
       if (questionTwo === 'yes' || questionTwo === 'y' || questionTwo === 'yeah'|| questionTwo === 'yup'|| questionTwo === 'yep' ) {
         alert('Yup. One little old kitty bitch named Puppy. She is the bane of my existence and the love of my life. But mostly the first one.');
         console.log(++score);
@@ -91,8 +89,9 @@
         alert('u silly');
       }
 
-      var questionThree = prompt('Have I moved more or less than ten times?').toLowerCase();
+// change this
       console.log("question three");
+      var questionThree = prompt('Have I moved more or less than ten times?').toLowerCase();
       if (questionThree === 'less' || questionThree === 'l' || questionThree === '<') {
         alert('Nope. I\'ve moved a LOT.');
       }
@@ -104,8 +103,9 @@
         alert('wat r u even saying');
       }
 
-      var questionFour = prompt('Based on what you just learned (or didn\'t learn), do I like moving?').toLowerCase();
+// change this too
       console.log("question four");
+      var questionFour = prompt('Based on what you just learned (or didn\'t learn), do I like moving?').toLowerCase();
       if (questionFour === 'yes' || questionFour === 'y' || questionFour === 'yeah'|| questionFour === 'yup'|| questionFour === 'yep' ) {
         alert('I... do not.');
       }
@@ -117,9 +117,8 @@
         alert('like r u even trying');
       }
 
-
-      var questionFive = prompt('Which of these places have I NOT lived?\n\nCalifornia\nLouisiana\nFlorida\nIndia\nConnecticut').toLowerCase();
       console.log("question five");
+      var questionFive = prompt('Which of these places have I NOT lived?\n\nCalifornia\nLouisiana\nFlorida\nIndia\nConnecticut').toLowerCase();
       if (questionFive === 'california' || questionFive === 'ca' || questionFive === 'cali'|| questionFive === 'florida'|| questionFive === 'fl' || questionFive === 'india' || questionFive === 'connecticut'  || questionFive === 'ct' ) {
         alert('Nope! I have indeed lived there.');
       }
@@ -131,12 +130,9 @@
         alert('can u not spell or');
       }
 
-
-      var questionSix = prompt('What kind of music do I regularly listen to?').toLowerCase();
-
-      var sixArray = ['alternative', 'classic rock', 'hip-hop', 'rap', 'jazz', 'rock'];
       console.log("question six");
-
+      var questionSix = prompt('What kind of music do I regularly listen to?').toLowerCase();
+      var sixArray = ['alternative', 'classic rock', 'hip-hop', 'rap', 'jazz', 'rock'];
       if (sixArray.indexOf(questionSix) > -1) {
         alert('Definitely!');
         console.log(++score);
@@ -144,6 +140,26 @@
       else if (sixArray.indexOf(questionSix) < 0) {
         alert('That wasn\'t one of the answers I entered, but I would probably still listen to it!');
       }
+
+      console.log("question seven");
+      var questionSeven = prompt('How many times have I moved?', 0);
+      var answerSeven = parseInt(questionSeven);
+
+      // while !(answerSeven === 12) {
+      if (answerSeven === 12) {
+        alert('Yup! That\'s it! Or at least, that\'s how many I can remember.');
+      }
+      else if (answerSeven > 12) {
+        alert('Too high!');
+      }
+      else if (answerSeven < 12) {
+        alert('Too low!');
+      }
+      else {
+        alert('Is that a number?')
+      }
+      // }
+
 
       alert('Your score is ' + score + ' out of 6, ' + userName + '. Hooray for you!');
 
