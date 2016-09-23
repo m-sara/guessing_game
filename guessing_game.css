@@ -1,14 +1,6 @@
-
 body {
   background-color: black;
-  color: white;
-}
-
-.header {
-  color: #373137;
-  font-size: 450%;
-  font-weight: bold;
-  letter-spacing: 6px;
+  color: #f3f1f3;
 }
 
 hr {
@@ -16,6 +8,13 @@ hr {
   color: #6f626f;
   background-color: #6f626f;
   border: none;
+}
+
+.header {
+  color: #373137;
+  font-size: 450%;
+  font-weight: bold;
+  letter-spacing: 6px;
 }
 
 .resumetitle {
