@@ -161,7 +161,7 @@ function question5() {
 function question6() {
   console.log('question six');
   var questionSix = prompt('What is a kind of music that I regularly listen to?').toLowerCase();
-  var sixArray = ['alternative', 'classic rock', 'hip-hop', 'rap', 'jazz', 'rock', 'pop', 'pop punk', 'top 40', 'contemporary'];
+  var sixArray = ['alternative', 'classic rock', 'hip-hop', 'hip hop', 'rap', 'jazz', 'rock', 'pop', 'pop punk', 'top 40', 'contemporary'];
   if (sixArray.indexOf(questionSix) > -1) {
     alert('That\'s one!');
     ++score;
@@ -188,7 +188,7 @@ function question7() {
   var tries = 0;
   var tryCount = 10;
   while (tryCount > 0) {
-    questionSeven = prompt('How many times have I moved? You get ten tries!', tryCount);
+    questionSeven = prompt('How many times have I moved? You get ten tries!', 'Tries left: ' + tryCount).replace(/, | '\, '/g, '').replace(' trillion', '000000000000').replace(' trilion', '000000000000').replace(' billion', '000000000').replace(' bilion', '000000000').replace(' million', '000000').replace(' milion', '000000').replace(' thousand', '000').replace(' hundred', '00');
     if (parseInt(questionSeven) === 12) {
       ++tries;
       console.log('Tries: ' + tries);
@@ -241,14 +241,20 @@ function question7() {
 }
 
 // FINAL SCORE
-function finalScore() {
+function finalScore(event) {
   if (questionSeven === null) {
     return;
   }
-  else if (userName == 'idk' || userName == 'i dont know' || userName == 'i don\'t know' || userName == '') {
+  if (userName == 'idk' || userName == 'i dont know' || userName == 'i don\'t know' || userName == '') {
     alert('Your score is ' + score + ' out of 7, person who doesn\'t know their own name. Hooray for you!');
+    if (event.keyCode == 27) {
+      window.close();
+    }
   }
   else {
     alert('Your score is ' + score + ' out of 7, ' + userName + '. Hooray for you!');
+    if (event.keyCode == 27) {
+      window.close();
+    }
   }
 }
