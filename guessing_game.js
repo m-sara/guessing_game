@@ -241,20 +241,14 @@ function question7() {
 }
 
 // FINAL SCORE
-function finalScore(event) {
+function finalScore() {
   if (questionSeven === null) {
     return;
   }
   if (userName == 'idk' || userName == 'i dont know' || userName == 'i don\'t know' || userName == '') {
     alert('Your score is ' + score + ' out of 7, person who doesn\'t know their own name. Hooray for you!');
-    if (event.keyCode == 27) {
-      window.close();
-    }
   }
   else {
     alert('Your score is ' + score + ' out of 7, ' + userName + '. Hooray for you!');
-    if (event.keyCode == 27) {
-      window.close();
-    }
   }
 }
