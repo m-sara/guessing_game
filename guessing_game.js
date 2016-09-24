@@ -18,7 +18,7 @@ function askName() {
     alert('That is unfortunate');
     console.log('User: they don\'t know i guess');
   }
-  else if (userName.toLowerCase() === 'no' || userName.toLowerCase() === 'n' || userName.toLowerCase() === 'nope' || userName.toLowerCase() === 'na' || userName.toLowerCase() === 'nah' || userName.toLowerCase() === '') {
+  else if (userName.toLowerCase() === 'no' || userName.toLowerCase() === 'n' || userName.toLowerCase() === 'nope' || userName.toLowerCase() === 'na' || userName.toLowerCase() === 'nah' || userName.toLowerCase() === 'ni' || userName.toLowerCase() === '') {
     alert('fine');
     console.log('hmph');
   }
@@ -40,7 +40,7 @@ function question1() {
     ++score;
     console.log('Correct answers: ' + score);
   }
-  else if (questionOne === 'no' || questionOne === 'n' || questionOne === 'nope' || questionOne === 'na' || questionOne === 'nah') {
+  else if (questionOne === 'no' || questionOne === 'n' || questionOne === 'nope' || questionOne === 'na' || questionOne === 'nah' || questionOne === 'ni') {
     alert('i die');
   }
   else if (questionOne === 'idk' || questionOne === 'i dont know' || questionOne === 'i don\'t know') {
@@ -63,7 +63,7 @@ function question2() {
     ++score;
     console.log('Correct answers: ' + score);
   }
-  else if (questionTwo === 'no' || questionTwo === 'n' || questionTwo === 'nope' || questionTwo === 'na' || questionTwo === 'nah') {
+  else if (questionTwo === 'no' || questionTwo === 'n' || questionTwo === 'nope' || questionTwo === 'na' || questionTwo === 'nah' || questionTwo === 'ni') {
     alert('Na, I got one cat. She\'s not fat, she\'s big-boned. We\'re like an old married couple. And one of us shits in a box.');
   }
   else if (questionTwo === 'idk' || questionTwo === 'i dont know' || questionTwo === 'i don\'t know') {
@@ -86,7 +86,7 @@ function question3() {
     ++score;
     console.log('Correct answers: ' + score);
   }
-  else if (questionThree === 'no' || questionThree === 'n' || questionThree === 'nope' || questionThree === 'na' || questionThree === 'nah') {
+  else if (questionThree === 'no' || questionThree === 'n' || questionThree === 'nope' || questionThree === 'na' || questionThree === 'nah' || questionThree === 'ni') {
     alert('Unless the temperature is above 75°F, ya girl not interested in going outside.');
   }
   else if (questionThree === 'idk' || questionThree === 'i dont know' || questionThree === 'i don\'t know') {
@@ -117,7 +117,7 @@ function question4() {
   else if (questionFour === 'idk' || questionFour === 'i dont know' || questionFour === 'i don\'t know') {
     alert('I know you don\'t know, that\'s why I said guess!');
   }
-  else if (questionFour === 'no' || questionFour === 'n' || questionFour === 'nope' || questionFour === 'na' || questionFour === 'nah' ) {
+  else if (questionFour === 'no' || questionFour === 'n' || questionFour === 'nope' || questionFour === 'na' || questionFour === 'nah' || questionFour === 'ni') {
     alert('fine');
   }
   else if (questionFour == '') {
@@ -146,6 +146,9 @@ function question5() {
   else if (questionFive === 'idk' || questionFive === 'i dont know' || questionFive === 'i don\'t know') {
     alert('I know you don\'t know, that\'s why I said guess!');
   }
+  else if (questionFive === 'no' || questionFive === 'n' || questionFive === 'nope' || questionFive === 'na' || questionFive === 'nah' || questionFive === 'ni' || questionFive === '') {
+    alert('fine');
+  }
   else if (questionFive === null) {
     return;
   }
@@ -158,13 +161,13 @@ function question5() {
 function question6() {
   console.log('question six');
   var questionSix = prompt('What is a kind of music that I regularly listen to?').toLowerCase();
-  var sixArray = ['alternative', 'classic rock', 'hip-hop', 'rap', 'jazz', 'rock', 'pop', 'pop punk', 'top 40', 'contemporary'];
+  var sixArray = ['alternative', 'classic rock', 'hip-hop', 'hip hop', 'rap', 'jazz', 'rock', 'pop', 'pop punk', 'top 40', 'contemporary'];
   if (sixArray.indexOf(questionSix) > -1) {
     alert('That\'s one!');
     ++score;
     console.log('Correct answers: ' + score);
   }
-  else if (questionSix === 'no' || questionSix === 'n' || questionSix === 'nope' || questionSix === 'na' || questionSix === 'nah' || questionSix === '') {
+  else if (questionSix === 'no' || questionSix === 'n' || questionSix === 'nope' || questionSix === 'na' || questionSix === 'nah' || questionSix === 'ni' || questionSix === '') {
     alert('sigh');
   }
   else if (sixArray.indexOf(questionSix) < 0) {
@@ -185,7 +188,7 @@ function question7() {
   var tries = 0;
   var tryCount = 10;
   while (tryCount > 0) {
-    questionSeven = prompt('How many times have I moved? You get ten tries!', tryCount);
+    questionSeven = prompt('How many times have I moved? You get ten tries!', 'Tries left: ' + tryCount).replace(/, | '\, '/g, '').replace(' trillion', '000000000000').replace(' trilion', '000000000000').replace(' billion', '000000000').replace(' bilion', '000000000').replace(' million', '000000').replace(' milion', '000000').replace(' thousand', '000').replace(' hundred', '00');
     if (parseInt(questionSeven) === 12) {
       ++tries;
       console.log('Tries: ' + tries);
@@ -219,7 +222,7 @@ function question7() {
     else if (questionSeven === null) {
       break;
     }
-    else if (questionSeven === 'no' || questionSeven === 'n' || questionSeven === 'nope' || questionSeven === 'na' || questionSeven === 'nah' || questionSeven == '') {
+    else if (questionSeven === 'no' || questionSeven === 'n' || questionSeven === 'nope' || questionSeven === 'na' || questionSeven === 'nah' || questionSeven === 'ni' || questionSeven == '') {
       alert('fine');
       ++tries;
       --tryCount;
@@ -238,14 +241,20 @@ function question7() {
 }
 
 // FINAL SCORE
-function finalScore() {
+function finalScore(event) {
   if (questionSeven === null) {
     return;
   }
-  else if (userName == 'idk' || userName == 'i dont know' || userName == 'i don\'t know' || userName == '') {
+  if (userName == 'idk' || userName == 'i dont know' || userName == 'i don\'t know' || userName == '') {
     alert('Your score is ' + score + ' out of 7, person who doesn\'t know their own name. Hooray for you!');
+    if (event.keyCode == 27) {
+      window.close();
+    }
   }
   else {
     alert('Your score is ' + score + ' out of 7, ' + userName + '. Hooray for you!');
+    if (event.keyCode == 27) {
+      window.close();
+    }
   }
 }
